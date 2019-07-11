@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements IMainAct {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Создаем ViewModel и передаем интерфейс IMainAct
+        //для того что бы VM знал какие каманды может выполнить активность
         viewModel = new MainActivityViewModel(this);
         setContentView(R.layout.activity_main);
         RecyclerView recyclerView = findViewById(R.id.recycler);

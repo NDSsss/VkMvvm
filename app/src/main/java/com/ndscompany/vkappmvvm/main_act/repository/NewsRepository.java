@@ -10,6 +10,7 @@ public class NewsRepository implements INewsRepository {
         news.add("Two");
         news.add("Three");
         news.add("Four");
+        news.add("five");
         return news;
     }
 }
